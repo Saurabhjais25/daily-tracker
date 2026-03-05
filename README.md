@@ -14,6 +14,10 @@ Modal — Task add/edit करने का popup form — naam, emoji, days, ti
 
 
 
+
+
+
+
 🎨 CSS Design
 Theme System — [data-theme="dark"] और [data-theme="light"] से पूरी color scheme switch होती है CSS variables (--bg, --text, --acc) के through।
 
@@ -24,6 +28,11 @@ Task Blocks (.tb) — position:absolute use होता है ताकि blo
 Animations — @keyframes fadeUp से sections smoothly आते हैं, pulse से today का dot blink करता है, pulse2 से now-line का red dot animate होता है।
 
 Responsive — @media(max-width:640px) में mobile के लिए font sizes, grid columns, और button labels adjust होते हैं।
+
+
+
+
+
 
 ⚙️ JavaScript Logic
 यह सबसे बड़ा हिस्सा है, इसे parts में समझते हैं:
