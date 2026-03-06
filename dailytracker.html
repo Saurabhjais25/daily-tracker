@@ -556,16 +556,16 @@ header{
 <!-- Modal -->
 <div class="overlay" id="overlay">
   <div class="modal" id="modal">
-    <div class="modal-title" id="modalTitle">📝 naya task</div>
+    <div class="modal-title" id="modalTitle">📝 New Task</div>
 
     <div class="field">
-      <label>naam</label>
+      <label>Take Name</label>
       <input id="fName" type="text" placeholder="e.g. Morning Exercise" maxlength="50"/>
     </div>
 
     <div class="two-col">
       <div class="field">
-        <label>emoji</label>
+        <label>Emoji</label>
         <input id="fEmoji" type="text" placeholder="🎯" maxlength="2"/>
       </div>
       <div class="field">
@@ -582,12 +582,12 @@ header{
     </div>
 
     <div class="field">
-      <label>din chunein</label>
+      <label>Choose Day</label>
       <div class="day-preset-row">
-        <div class="day-preset" data-p="weekdays">weekdays</div>
-        <div class="day-preset" data-p="weekend">weekend</div>
-        <div class="day-preset" data-p="everyday">everyday</div>
-        <div class="day-preset" data-p="none">clear</div>
+        <div class="day-preset" data-p="weekdays">Weekdays</div>
+        <div class="day-preset" data-p="weekend">Weekend</div>
+        <div class="day-preset" data-p="everyday">Everyday</div>
+        <div class="day-preset" data-p="none">Clear</div>
       </div>
       <div class="days-row" id="daysRow">
         <div class="d-chip" data-d="0">Sun</div><div class="d-chip" data-d="1">Mon</div>
@@ -598,15 +598,15 @@ header{
     </div>
 
     <div class="two-col">
-      <div class="field"><label>shuru hoga</label><input id="fStart" type="time" value="09:00"/></div>
-      <div class="field"><label>khatam hoga</label><input id="fEnd" type="time" value="10:00"/></div>
+      <div class="field"><label>Starting Time</label><input id="fStart" type="time" value="09:00"/></div>
+      <div class="field"><label>End Time</label><input id="fEnd" type="time" value="10:00"/></div>
     </div>
 
     <div class="field">
-      <label>⏰ reminder (optional)</label>
+      <label>⏰ Reminder (optional)</label>
       <select id="fReminder">
-        <option value="">koi reminder nahi</option>
-        <option value="0">time par hi</option>
+        <option value="">No Reminder</option>
+        <option value="0">AT Time</option>
         <option value="5">5 min pehle</option>
         <option value="10">10 min pehle</option>
         <option value="15">15 min pehle</option>
@@ -1191,4 +1191,5 @@ setInterval(()=>{if(weekOffset===0)render();},60000);
 </body>
 
 </html>
+
 
