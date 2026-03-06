@@ -454,15 +454,15 @@ header{
     <button class="theme-btn" id="themeBtn" title="Toggle theme"></button>
     <button class="btn btn-primary" id="addTaskBtn">
       <span class="btn-icon">+</span>
-      <span>add task</span>
+      <span>Add Task</span>
     </button>
   </div>
 </header>
 
 <div class="tabs">
-  <div class="tab active" data-tab="week">📅 week</div>
-  <div class="tab" data-tab="insights">📊 insights</div>
-  <div class="tab" data-tab="today">⚡ today <span class="tab-badge" id="todayBadge" style="display:none">0</span></div>
+  <div class="tab active" data-tab="week">📅 Week</div>
+  <div class="tab" data-tab="insights">📊 Insights</div>
+  <div class="tab" data-tab="today">⚡ Today <span class="tab-badge" id="todayBadge" style="display:none">0</span></div>
 </div>
 
 <div class="container">
@@ -471,7 +471,7 @@ header{
   <div id="weekTab">
     <!-- Quick add -->
     <div class="quick-add-bar">
-      <div class="quick-add-label">quick add templates</div>
+      <div class="quick-add-label">Quick Add Templates</div>
       <div class="quick-templates" id="quickTemplates">
         <div class="qt-chip" data-t="morning">🌅 Morning Routine<span style="color:var(--muted);margin-left:4px;font-size:.58rem">6–7am</span></div>
         <div class="qt-chip" data-t="workout">💪 Workout<span style="color:var(--muted);margin-left:4px;font-size:.58rem">7–8am</span></div>
@@ -486,7 +486,7 @@ header{
     <!-- Today strip -->
     <div class="today-strip">
       <div class="strip-header">
-        <div class="strip-label">aaj ke tasks</div>
+        <div class="strip-label">Today tasks</div>
         <div class="strip-progress" id="stripProg"></div>
       </div>
       <div class="today-chips" id="todayChips"></div>
@@ -506,34 +506,34 @@ header{
     <div class="stats-row" id="statsRow"></div>
     <div class="ins-grid">
       <div class="ins-card full">
-        <div class="ic-label">busy/free heatmap — hover karke detail dekho</div>
+        <div class="ic-label">busy/free heatmap </div>
         <div style="overflow-x:auto"><div class="hm" id="hmGrid"></div></div>
         <div class="legend">
-          <div class="leg-item"><div class="leg-dot" style="background:var(--s3)"></div>free</div>
-          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.12)"></div>halka</div>
-          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.3)"></div>thoda</div>
-          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.52)"></div>busy</div>
-          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.74)"></div>bahut busy</div>
+          <div class="leg-item"><div class="leg-dot" style="background:var(--s3)"></div>Free</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.12)"></div>Avgrage</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.3)"></div>Mediam</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.52)"></div>Busy</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.74)"></div>Very Busy</div>
         </div>
       </div>
       <div class="ins-card">
-        <div class="ic-label">har din — busy vs free</div>
+        <div class="ic-label">Daily Rootin — Busy/Free</div>
         <div class="bar-chart" id="barChart"></div>
         <div class="legend">
-          <div class="leg-item"><div class="leg-dot" style="background:rgba(248,113,113,.55)"></div>busy</div>
-          <div class="leg-item"><div class="leg-dot" style="background:rgba(56,189,248,.35)"></div>free</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(248,113,113,.55)"></div>Busy</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(56,189,248,.35)"></div>Free</div>
         </div>
       </div>
       <div class="ins-card">
-        <div class="ic-label">timeline flow</div>
+        <div class="ic-label">Timeline Flow</div>
         <div style="overflow-x:auto"><div class="flow" id="flowGrid"></div></div>
         <div class="legend">
-          <div class="leg-item"><div class="leg-dot" style="background:rgba(248,113,113,.5)"></div>busy</div>
-          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.1);border:1px dashed rgba(110,231,183,.25)"></div>free</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(248,113,113,.5)"></div>Busy</div>
+          <div class="leg-item"><div class="leg-dot" style="background:rgba(110,231,183,.1);border:1px dashed rgba(110,231,183,.25)"></div>Free</div>
         </div>
       </div>
       <div class="ins-card full">
-        <div class="ic-label">peak busy hours — poore hafte mein</div>
+        <div class="ic-label">Peak Busy Hours —Hole Week</div>
         <div class="peak-wrap" id="peakWrap"></div>
         <div class="peak-xlabels"><span>6am</span><span>9am</span><span>12pm</span><span>3pm</span><span>6pm</span><span>9pm</span></div>
       </div>
@@ -1191,3 +1191,4 @@ setInterval(()=>{if(weekOffset===0)render();},60000);
 </body>
 
 </html>
+
